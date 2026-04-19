@@ -4,7 +4,7 @@
     android:padding="16dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#666666">
+    android:background="#1E1E1E">
 
     <EditText
         android:id="@+id/etDate"
@@ -39,7 +39,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#6750A4"
-        android:textColor="#FFFFFF"/>
+        android:background="@drawable/glass_ripple"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:elevation="6dp"/>
 
     <Button
         android:id="@+id/btnSave"
@@ -47,5 +50,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#6750A4"
-        android:textColor="#FFFFFF"/>
+        android:background="@drawable/glass_ripple"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:elevation="6dp"/>
 </LinearLayout>

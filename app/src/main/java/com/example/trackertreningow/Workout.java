@@ -1,6 +1,7 @@
 package com.example.trackertreningow;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 // Serializable potrzebne do zapisu przy rotacji ekranu
 public class Workout implements Serializable {
@@ -10,6 +11,15 @@ public class Workout implements Serializable {
     private String description; // opis ćwiczenia
     private String imagePath;   // ścieżka do zdjęcia
 
+    private ArrayList<Serie> serieList = new ArrayList<>();
+
+    public ArrayList<Serie> getSerieList() {
+        return serieList;
+    }
+
+    public void addSerie(Serie s) {
+        serieList.add(s);
+    }
     // Konstruktor - tworzy nowy obiekt treningu
     public Workout(String date, String name, String description, String imagePath) {
         this.date = date;
